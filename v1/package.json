@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "MakerLAB Tools V1",
   "scripts": {
-    "build": "echo 'No build step required for Vercel Serverless Functions'",
+    "build": "mkdir -p public && cp -r frontend/* public/",
     "dev": "ts-node-dev --respawn --transpile-only backend/src/server.ts"
   },
   "dependencies": {
